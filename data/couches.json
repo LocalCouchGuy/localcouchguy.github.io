@@ -1,37 +1,32 @@
 {
   "couches": [
     {
-      "name": "Sample: L-shaped sectional",
+      "name": "Grey Fabric U-Shaped Sectional",
       "status": "available",
-      "price": 850,
-      "width": 112,
-      "depth": 88,
-      "height": 34,
-      "photos": [],
-      "description": "Sample listing so you can try the checkout. Delete it once your real couches are in.",
-      "sample": true
+      "price": 950,
+      "width": 118,
+      "depth": 94,
+      "height": 37,
+      "photos": [
+        "/images/couches/Sectional couch in storage unit.png",
+        "/images/couches/Olive sectional in a clean storage unit.png",
+        "/images/couches/Olive sectional in an empty storage unit.png",
+        "/images/couches/Olive sectional in a clean storage unit (1).png",
+        "/images/couches/Charcoal sectional in a clean storage unit.png",
+        "/images/couches/Charcoal sectional in a clean storage unit (1).png",
+        "/images/couches/Charcoal couch in a clean storage unit.png"
+      ],
+      "description": "### Grey U-Shaped Sectional Sofa\n\nSpacious and comfortable grey U-shaped sectional with plenty of seating, perfect for larger living rooms and family spaces.\n\n**Condition:** Good used condition. Fully professionally deep cleaned and ready for its new home.\n\n**Minor Imperfections:** Some dog scratches on one back corner and light fabric pulling on the opposite corner. These are cosmetic imperfections and do not affect the couch's comfort or functionality.\n\n**Delivery:** Free delivery within Kitchener–Waterloo.\n\nContact us to schedule a viewing or arrange delivery."
     },
     {
       "name": "Sample: Sectional with chaise",
       "status": "available",
-      "price": null,
-      "width": null,
-      "depth": null,
-      "height": null,
-      "photos": [],
-      "description": "Matvei's description of this couch goes here: colour, fabric, condition, seats, and anything else a buyer should know.",
-      "sample": true
+      "description": "Matvei's description of this couch goes here: colour, fabric, condition, seats, and anything else a buyer should know."
     },
     {
       "name": "Sample: Modular sectional",
       "status": "sold",
-      "price": null,
-      "width": null,
-      "depth": null,
-      "height": null,
-      "photos": [],
-      "description": "This is how a sold couch looks. It stays on the page, marked Sold.",
-      "sample": true
+      "description": "This is how a sold couch looks. It stays on the page, marked Sold."
     }
   ]
 }

@@ -1,0 +1,37 @@
+{
+  "couches": [
+    {
+      "name": "Sample: L-shaped sectional",
+      "status": "available",
+      "price": 850,
+      "width": 112,
+      "depth": 88,
+      "height": 34,
+      "photos": [],
+      "description": "Sample listing so you can try the checkout. Delete it once your real couches are in.",
+      "sample": true
+    },
+    {
+      "name": "Sample: Sectional with chaise",
+      "status": "available",
+      "price": null,
+      "width": null,
+      "depth": null,
+      "height": null,
+      "photos": [],
+      "description": "Matvei's description of this couch goes here: colour, fabric, condition, seats, and anything else a buyer should know.",
+      "sample": true
+    },
+    {
+      "name": "Sample: Modular sectional",
+      "status": "sold",
+      "price": null,
+      "width": null,
+      "depth": null,
+      "height": null,
+      "photos": [],
+      "description": "This is how a sold couch looks. It stays on the page, marked Sold.",
+      "sample": true
+    }
+  ]
+}

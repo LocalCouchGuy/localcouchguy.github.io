@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LocalCouchGuy</title>
+<meta name="description" content="LocalCouchGuy: premium used couches and sectionals, professionally deep cleaned. Based in Kitchener, ON. Reserve or buy online and get delivery anywhere in Ontario.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wdth,wght@75..100,400..700&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="site-header" id="site-header">
+  <div class="wrap head-row">
+    <a class="brand" href="#top" aria-label="LocalCouchGuy, back to top">LocalCouchGuy<i aria-hidden="true"></i></a>
+    <nav class="nav" id="site-nav" aria-label="Sections">
+      <a href="#couches" data-num="01">Couches</a>
+      <a href="#how" data-num="02">How it works</a>
+      <a href="#reviews" data-num="03">Reviews</a>
+      <a href="#sell" data-num="04">Sell your couch</a>
+      <a href="#faq" data-num="05">FAQ</a>
+      <a href="#book" data-num="06" class="nav-book-mobile">Book a viewing</a>
+    </nav>
+    <a class="btn btn-primary btn-sm head-cta" href="#book">Book a viewing</a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <h1>Quality used couches, <em>deep cleaned</em> and delivered.</h1>
+      <div class="measure" aria-hidden="true"><i class="tick l"></i><span class="mono">Measured · W × D × H on every listing</span><i class="tick r"></i></div>
+      <div class="hero-row">
+        <div class="hero-lede">
+          <p>I'm Matvei. I sell premium sectionals and couches out of Kitchener, and I deliver anywhere in Ontario.</p>
+          <div class="ctas">
+            <a class="btn btn-primary" href="#couches">Browse couches <span class="arr" aria-hidden="true">→</span></a>
+            <a class="btn btn-outline" href="sms:+13653249689">Text (365) 324-9689</a>
+          </div>
+          <div class="rating-line">
+            <span class="stars" data-rating="5" aria-hidden="true"></span>
+            <span><strong>4.7</strong> from 233 reviews on Facebook Marketplace</span>
+          </div>
+        </div>
+        <ul class="hero-facts">
+          <li><b>Deep cleaned</b><span>Every couch is professionally cleaned before it's listed.</span></li>
+          <li><b>Measured</b><span>Width, depth and height on every listing, so you know it fits.</span></li>
+          <li><b>Delivered</b><span>Pick up in Kitchener, or delivery anywhere in Ontario.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 COUCHES -->
+  <section class="section" id="couches" style="padding-top:clamp(32px,5vw,64px)">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num mono">01</span>
+        <div class="sec-title">
+          <h2>Couches for sale</h2>
+          <p>Tap any couch for every photo, the full measurements and its description.</p>
+        </div>
+      </div>
+      <div class="couch-bar">
+        <div class="tabs" role="group" aria-label="Filter couches">
+          <button class="tab" type="button" data-filter="all" aria-pressed="true">All<sup id="count-all"></sup></button>
+          <button class="tab" type="button" data-filter="available" aria-pressed="false">Available<sup id="count-available"></sup></button>
+          <button class="tab" type="button" data-filter="sold" aria-pressed="false">Sold<sup id="count-sold"></sup></button>
+        </div>
+        <p class="preview-note" id="preview-note">Preview: sample listings. Real couches appear here once their photos are added.</p>
+      </div>
+      <div class="couch-grid" id="couch-grid"></div>
+    </div>
+  </section>
+
+  <!-- 02 HOW IT WORKS -->
+  <section class="section soft" id="how">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num mono">02</span>
+        <div class="sec-title">
+          <h2>How buying works</h2>
+          <p>Four steps from finding a couch to having it in your living room.</p>
+        </div>
+      </div>
+      <ol class="steps">
+        <li><span class="step-num" aria-hidden="true">1</span><h3>Pick a couch</h3><p>Browse the listings. Each one has photos, measurements and a description.</p></li>
+        <li><span class="step-num" aria-hidden="true">2</span><h3>Book a viewing</h3><p>Send a viewing request or text me, then come see it in person in Kitchener.</p></li>
+        <li><span class="step-num" aria-hidden="true">3</span><h3>Reserve it or buy it</h3><p>Hold it with a <span data-pct>10</span>% deposit, or buy it outright with delivery in one checkout. You pay by Interac e-Transfer.</p></li>
+        <li><span class="step-num" aria-hidden="true">4</span><h3>Pickup or delivery</h3><p>Take it home from Kitchener, or get it delivered anywhere in Ontario. Delivery is priced by zone.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 03 REVIEWS -->
+  <section class="section" id="reviews">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num mono">03</span>
+        <div class="sec-title">
+          <h2>What people say</h2>
+          <p>Reviews from Facebook Marketplace, from people who bought from me and people who sold to me.</p>
+        </div>
+      </div>
+      <div class="rev-top">
+        <div class="score">
+          <span class="big">4.7<small> / 5</small></span>
+          <span class="stars" data-rating="5" aria-hidden="true"></span>
+          <p>233 reviews on Facebook Marketplace<br>Highly rated on Marketplace</p>
+        </div>
+        <figure class="feature-quote">
+          <blockquote>“On time product as described, helped me get it to my apartment”</blockquote>
+          <figcaption class="who"><b>Zameel</b><span class="mono">Bought from Matvei · July 23, 2026</span></figcaption>
+        </figure>
+      </div>
+      <div class="strengths" aria-label="What reviewers mention most">
+        <div><span class="n">122</span><span class="k">Communication</span></div>
+        <div><span class="n">105</span><span class="k">Punctuality</span></div>
+        <div><span class="n">77</span><span class="k">Pricing</span></div>
+        <div><span class="n">71</span><span class="k">Item description</span></div>
+      </div>
+      <p class="strengths-cap mono">Times reviewers called out each strength</p>
+      <div class="rev-list" id="rev-list"></div>
+      <div class="rev-foot"><a class="link" href="https://www.facebook.com/marketplace/profile/100092992593073/" target="_blank" rel="noopener">Read all 233 reviews on Facebook ↗</a></div>
+    </div>
+  </section>
+
+  <!-- 04 SELL -->
+  <section class="section sell" id="sell">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num mono">04</span>
+        <div class="sec-title">
+          <h2>Selling a couch? <em>Text me.</em></h2>
+          <p>Moving or upgrading? I buy quality couches and sectionals and pick them up myself.</p>
+        </div>
+      </div>
+      <div class="sell-grid">
+        <div>
+          <ol class="sell-steps">
+            <li><span class="step-num" aria-hidden="true">1</span><div><b>Send photos</b><span class="muted">A few clear photos, the measurements and your asking price.</span></div></li>
+            <li><span class="step-num" aria-hidden="true">2</span><div><b>Hear back</b><span class="muted">I'll look it over and get back to you.</span></div></li>
+            <li><span class="step-num" aria-hidden="true">3</span><div><b>I pick it up</b><span class="muted">We set a time and I haul it away.</span></div></li>
+          </ol>
+          <div class="ctas">
+            <a class="btn btn-primary" id="sell-sms" href="sms:+13653249689">Text photos to (365) 324-9689</a>
+            <a class="btn btn-outline" href="tel:+13653249689">Call</a>
+          </div>
+        </div>
+        <figure class="sell-quote">
+          <blockquote>“Good communication. Fast pickup.”</blockquote>
+          <figcaption class="who"><b>Christian</b><span class="mono">Sold to Matvei · September 3, 2026</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num mono">05</span>
+        <div class="sec-title">
+          <h2>Questions</h2>
+          <p>Don't see yours? Text me at <a class="link" href="sms:+13653249689">(365) 324-9689</a>.</p>
+        </div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-list">
+          <details><summary>Are the couches new?</summary><div class="faq-body"><p>No. They're pre-owned, high-quality couches and sectionals. Every one is professionally deep cleaned before it's sold.</p></div></details>
+          <details><summary>Can I see a couch before I buy it?</summary><div class="faq-body"><p>Yes. Send a viewing request below or text me, and we'll set up a time in Kitchener.</p></div></details>
+          <details><summary>How do I reserve a couch?</summary><div class="faq-body"><p>Tap “Buy or reserve” on the couch and choose the <span data-pct>10</span>% deposit. Send it by Interac e-Transfer, and the couch is held once I confirm your payment. The deposit comes off the price.</p></div></details>
+          <details><summary>How do I pay?</summary><div class="faq-body"><p>By Interac e-Transfer. Checkout shows the exact amount, the email to send it to, and an order number to put in the message.</p></div></details>
+          <details><summary>Do you deliver?</summary><div class="faq-body"><p>Yes, anywhere in Ontario: Kitchener-Waterloo, Cambridge, Guelph, London, Hamilton, the GTA and beyond. Delivery is priced by zone, and checkout shows the price for your area.</p></div></details>
+          <details><summary>Will it fit in my place?</summary><div class="faq-body"><p>Every listing has the width, depth and height in inches. Before delivery, measure:</p><ul><li>Door widths, including the building entrance</li><li>Hallways and tight turns</li><li>Stairwells and elevator doors</li></ul><p>Not sure? Text me your measurements.</p></div></details>
+          <details><summary>What does Sold mean on a listing?</summary><div class="faq-body"><p>That couch is already gone. Text me what you're looking for and I'll let you know when something similar comes in.</p></div></details>
+          <details><summary>Do you buy couches?</summary><div class="faq-body"><p>Yes. Text me photos, measurements and your asking price. See <a class="link" href="#sell">Sell your couch</a>.</p></div></details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 BOOK -->
+  <section class="section soft" id="book">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-num mono">06</span>
+        <div class="sec-title"><h2>Book a viewing</h2></div>
+      </div>
+      <div class="book-grid">
+        <div class="book-aside">
+          <p class="muted">Fill this out and it turns into a text to me with everything I need. I'll text you back to set a time.</p>
+          <p class="muted">Ready to buy? Use <b>Buy or reserve</b> on any couch to pay a deposit or the full price by Interac e-Transfer.</p>
+          <div class="contact-list">
+            <a href="tel:+13653249689"><span>Call (365) 324-9689</span><span class="mono">Call</span></a>
+            <a href="sms:+13653249689"><span>Text (365) 324-9689</span><span class="mono">Text</span></a>
+            <a href="https://www.facebook.com/marketplace/profile/100092992593073/" target="_blank" rel="noopener"><span>Facebook Marketplace</span><span class="mono">↗</span></a>
+          </div>
+        </div>
+        <div class="book-form">
+          <form id="viewing-form" novalidate>
+            <div class="row-2">
+              <div class="field">
+                <label for="f-name">Your name</label>
+                <input type="text" id="f-name" name="name" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="f-phone">Phone number</label>
+                <input type="tel" id="f-phone" name="phone" autocomplete="tel" inputmode="tel" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-couch">Which couch?</label>
+              <select id="f-couch" name="couch"></select>
+            </div>
+            <fieldset class="field">
+              <legend>Pickup or delivery?</legend>
+              <div class="seg">
+                <label><input type="radio" name="how" id="f-how-pickup" value="pickup" checked><span>Pickup in Kitchener</span></label>
+                <label><input type="radio" name="how" id="f-how-delivery" value="delivery"><span>Delivery</span></label>
+              </div>
+            </fieldset>
+            <div class="field" id="city-field" hidden>
+              <label for="f-city">Delivery city</label>
+              <input type="text" id="f-city" name="city" autocomplete="address-level2" placeholder="e.g. Guelph">
+            </div>
+            <div class="field">
+              <label for="f-when">Best day and time to view <span class="opt">(optional)</span></label>
+              <input type="text" id="f-when" name="when" placeholder="e.g. Saturday afternoon">
+            </div>
+            <div class="field">
+              <label for="f-msg">Anything else? <span class="opt">(optional)</span></label>
+              <textarea id="f-msg" name="msg" placeholder="Questions about the couch, your space, stairs, etc."></textarea>
+            </div>
+            <p class="form-error" id="form-error" hidden>Add your name and phone number so I can text you back.</p>
+            <div><button class="btn btn-primary" type="submit">Get my text ready <span class="arr" aria-hidden="true">→</span></button></div>
+          </form>
+
+          <div class="result" id="result" hidden aria-live="polite">
+            <h3>Your request is ready to send</h3>
+            <pre id="result-text"></pre>
+            <div class="ctas">
+              <a class="btn btn-primary" id="result-sms" href="sms:+13653249689">Open in Messages</a>
+              <button class="btn btn-outline" type="button" id="copy-btn">Copy message</button>
+            </div>
+            <p class="muted" id="copy-status" style="font-size:var(--fs-small)">If Messages doesn't open, copy the message and text it to <b>(365) 324-9689</b>.</p>
+            <div><button class="text-btn" type="button" id="edit-btn">Edit request</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="checkout" id="checkout" hidden>
+  <div class="wrap">
+    <div class="co-top">
+      <button class="text-btn" type="button" id="co-back">← Back to couches</button>
+      <span class="mono muted" id="co-step">Step 1 of 2 · Your order</span>
+    </div>
+    <h1 class="co-title" id="co-title">Checkout</h1>
+    <div class="co-grid">
+      <div class="co-main">
+        <form id="co-form" novalidate>
+          <section class="co-block" aria-labelledby="co-h1">
+            <h2 class="co-h" id="co-h1"><span class="mono">01</span>How do you want to pay?</h2>
+            <div class="co-options">
+              <label class="co-opt"><input type="radio" name="co-pay" id="co-pay-deposit" value="deposit" checked><span><b>Reserve with a <span data-pct>10</span>% deposit</b><span class="muted" id="co-deposit-line"></span></span></label>
+              <label class="co-opt"><input type="radio" name="co-pay" id="co-pay-full" value="full"><span><b>Buy it now</b><span class="muted" id="co-full-line"></span></span></label>
+            </div>
+          </section>
+          <section class="co-block" aria-labelledby="co-h2">
+            <h2 class="co-h" id="co-h2"><span class="mono">02</span>Pickup or delivery</h2>
+            <div class="co-options">
+              <label class="co-opt"><input type="radio" name="co-how" id="co-how-pickup" value="pickup" checked><span><b>Pickup in Kitchener</b><span class="muted">Free. I'll text you the pickup address and a time.</span></span></label>
+              <label class="co-opt"><input type="radio" name="co-how" id="co-how-delivery" value="delivery"><span><b>Delivery</b><span class="muted">Anywhere in Ontario, priced by zone.</span></span></label>
+            </div>
+            <div class="co-delivery" id="co-delivery" hidden>
+              <div class="field"><label for="co-zone">Delivery zone</label><select id="co-zone"></select><span class="co-note" id="co-zone-areas"></span></div>
+              <div class="field"><label for="co-address">Street address</label><input type="text" id="co-address" autocomplete="street-address"></div>
+              <div class="row-2">
+                <div class="field"><label for="co-city">City</label><input type="text" id="co-city" autocomplete="address-level2"></div>
+                <div class="field"><label for="co-postal">Postal code</label><input type="text" id="co-postal" autocomplete="postal-code"></div>
+              </div>
+            </div>
+          </section>
+          <section class="co-block" aria-labelledby="co-h3">
+            <h2 class="co-h" id="co-h3"><span class="mono">03</span>Your details</h2>
+            <div class="row-2">
+              <div class="field"><label for="co-name">Your name</label><input type="text" id="co-name" autocomplete="name"></div>
+              <div class="field"><label for="co-phone">Phone number</label><input type="tel" id="co-phone" autocomplete="tel" inputmode="tel"></div>
+            </div>
+            <div class="field"><label for="co-email">Email <span class="opt">(optional)</span></label><input type="text" id="co-email" autocomplete="email" inputmode="email"></div>
+            <div class="field"><label for="co-when">Best day and time for pickup or delivery <span class="opt">(optional)</span></label><input type="text" id="co-when" placeholder="e.g. Saturday morning"></div>
+            <div class="field"><label for="co-notes">Anything I should know? <span class="opt">(optional)</span></label><textarea id="co-notes" placeholder="Stairs, elevator, tight doorways…"></textarea></div>
+          </section>
+          <p class="form-error" id="co-error" hidden></p>
+          <div><button class="btn btn-primary" type="submit">Continue to payment <span class="arr" aria-hidden="true">→</span></button></div>
+        </form>
+        <div class="co-paybox" id="co-paybox" hidden aria-live="polite"></div>
+      </div>
+      <aside class="co-summary" id="co-summary" aria-label="Order summary"></aside>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div><h4>Shop</h4><ul><li><a href="#couches">Couches for sale</a></li><li><a href="#how">How buying works</a></li><li><a href="#book">Book a viewing</a></li></ul></div>
+      <div><h4>Info</h4><ul><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h4>Sell</h4><ul><li><a href="#sell">Sell your couch</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li><a href="tel:+13653249689">(365) 324-9689</a></li><li>Kitchener, Ontario</li><li><a href="https://www.facebook.com/marketplace/profile/100092992593073/" target="_blank" rel="noopener">Facebook Marketplace ↗</a></li></ul></div>
+    </div>
+    <div class="wordmark" aria-hidden="true">LocalCouchGuy<i></i></div>
+    <div class="foot-base mono"><span>© 2026 LocalCouchGuy</span><span>Kitchener, ON · Delivering anywhere in Ontario</span></div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-outline" href="tel:+13653249689">Call</a>
+  <a class="btn btn-primary" href="sms:+13653249689">Text</a>
+</div>
+
+<dialog id="couch-modal" aria-labelledby="m-title">
+  <div class="modal-grid">
+    <div class="gallery">
+      <div class="gallery-main" id="m-main"></div>
+      <div class="thumbs" id="m-thumbs"></div>
+    </div>
+    <div class="modal-info">
+      <button class="close-btn" type="button" id="m-close" aria-label="Close">×</button>
+      <span class="m-status mono" id="m-status"></span>
+      <h3 id="m-title"></h3>
+      <span class="price" id="m-price"></span>
+      <div class="m-dims" id="m-dims"></div>
+      <p class="m-desc" id="m-desc"></p>
+      <div class="m-actions" id="m-actions"></div>
+    </div>
+  </div>
+</dialog>
+<script src="app.js"></script>
+</body>
+</html>

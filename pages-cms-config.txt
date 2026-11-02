@@ -1,0 +1,96 @@
+media:
+  input: images/couches
+  output: /images/couches
+  categories: [image]
+
+content:
+  - name: couches
+    label: Couches
+    type: file
+    path: data/couches.json
+    format: json
+    fields:
+      - name: couches
+        label: Couches for sale
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.name}"
+        fields:
+          - name: name
+            label: Couch name
+            type: string
+            required: true
+          - name: status
+            label: Status
+            type: select
+            options:
+              values:
+                - name: available
+                  label: Available
+                - name: sold
+                  label: Sold
+          - name: price
+            label: Price ($)
+            type: number
+            description: Leave empty to show "Message for price". Couches need a price to be bought online.
+            options:
+              min: 0
+          - name: width
+            label: Width (inches)
+            type: number
+          - name: depth
+            label: Depth (inches)
+            type: number
+          - name: height
+            label: Height (inches)
+            type: number
+          - name: photos
+            label: Photos
+            type: image
+            description: The first photo is the cover.
+            options:
+              multiple:
+                max: 12
+          - name: description
+            label: Description
+            type: text
+
+  - name: settings
+    label: Checkout settings
+    type: file
+    path: data/settings.json
+    format: json
+    fields:
+      - name: etransfer_email
+        label: Your Interac e-Transfer email
+        type: string
+        required: true
+      - name: deposit_percent
+        label: Deposit (% of the couch price)
+        type: number
+        options:
+          min: 1
+          max: 100
+      - name: delivery_zones
+        label: Delivery zones
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.name}"
+        fields:
+          - name: name
+            label: Zone name
+            type: string
+            required: true
+          - name: areas
+            label: Cities in this zone
+            type: string
+          - name: price
+            label: Delivery price ($)
+            type: number
+            description: Leave empty to show "quote by text".
+            options:
+              min: 0

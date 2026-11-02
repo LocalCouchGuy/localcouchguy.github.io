@@ -1,0 +1,26 @@
+{
+  "etransfer_email": "",
+  "deposit_percent": 10,
+  "delivery_zones": [
+    {
+      "name": "Kitchener, Waterloo & Cambridge",
+      "areas": "Kitchener, Waterloo, Cambridge, Elmira, New Hamburg",
+      "price": null
+    },
+    {
+      "name": "Within about 60 km",
+      "areas": "Guelph, Brantford, Stratford, Woodstock, Fergus",
+      "price": null
+    },
+    {
+      "name": "Hamilton, London & the GTA",
+      "areas": "Hamilton, Burlington, Oakville, Mississauga, Brampton, Toronto, London",
+      "price": null
+    },
+    {
+      "name": "Rest of Ontario",
+      "areas": "Anywhere else in Ontario",
+      "price": null
+    }
+  ]
+}

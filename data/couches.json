@@ -43,9 +43,22 @@
       "description": "Grey Sectional Sofa with Pull-Out Bed\n\nSpacious and comfortable grey sectional with a chaise and pull-out bed, perfect for relaxing or accommodating overnight guests.\n\nCondition: Good used condition. Fully cleaned and ready for its new home.\n\nMinor Imperfections: A minor scuff on the corner and minor pilling under the cushions. The pilling is not visible when set up. These are cosmetic imperfections and do not affect the couch’s comfort or functionality. Please see photos for details.\n\nDelivery: Free delivery within Kitchener–Waterloo.\n\nContact us to schedule a viewing or arrange delivery."
     },
     {
-      "name": "Sample: Modular sectional",
-      "status": "sold",
-      "description": "This is how a sold couch looks. It stays on the page, marked Sold."
+      "name": "Beige Velvet Fabric U-Shaped Sectional",
+      "status": "available",
+      "price": 1000,
+      "width": 114,
+      "depth": 91,
+      "height": 32,
+      "photos": [
+        "/images/couches/Tan sectional in a ribbed storage unit.png",
+        "/images/couches/Beige Sectional in Storage Unit.png",
+        "/images/couches/Tan sectional in metal storage unit.png",
+        "/images/couches/Beige sectional in a metal storage unit.png",
+        "/images/couches/Tan sectional in a metal storage unit.png",
+        "/images/couches/Upright Tan Sectional in Clean Storage Unit.png",
+        "/images/couches/Taller storage unit, same couch.png"
+      ],
+      "description": "Beige Velvet Fabric L-Shaped Sectional Sofa\n\nSpacious and comfortable beige sectional with a chaise, offering plenty of seating for a living room or family space.\n\nCondition: Good used condition. Clean and ready for its new home.\n\nMinor Imperfections: Minor scuffs on the corners, hardly visible. A few cushions had to be resewn, but they have all been fixed.\n\nDelivery: Free delivery within Kitchener–Waterloo.\n\nContact us to schedule a viewing or arrange delivery."
     }
   ]
 }

@@ -147,7 +147,23 @@
     {
       "name": "Light Grey/White Fabric 3+2 Couch Set",
       "status": "available",
-      "price": 700
+      "price": 700,
+      "width": 90,
+      "depth": 35,
+      "height": 26,
+      "photos": [
+        "/images/couches/Screenshot 2026-11-05 165834.png",
+        "/images/couches/Screenshot 2026-11-05 165852.png",
+        "/images/couches/Screenshot 2026-11-05 165929.png",
+        "/images/couches/Screenshot 2026-11-05 165950.png",
+        "/images/couches/Screenshot 2026-11-05 170622.png",
+        "/images/couches/Screenshot 2026-11-05 170925.png",
+        "/images/couches/Screenshot 2026-11-05 170340.png",
+        "/images/couches/Screenshot 2026-11-05 170400.png",
+        "/images/couches/Screenshot 2026-11-05 170423.png",
+        "/images/couches/Screenshot 2026-11-05 171806.png"
+      ],
+      "description": "Light Grey/White Fabric 3+2 Couch Set\n\nSet is in overall good condition. Fully professionally deep cleaned, still has some light discolouring but hard to see. Besides that the couches are both in very good condition.\n\nSectional Seating: Comfortably seats 5–6 people.\n\nCondition: Good used condition.\n\nDelivery: Free delivery within Kitchener–Waterloo.\n\nContact us to schedule a viewing or arrange delivery."
     }
   ]
 }
